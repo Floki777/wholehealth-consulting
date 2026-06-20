@@ -64,32 +64,37 @@
                 linear-gradient(150deg, #0D1F1C 0%, #162B27 50%, #0D1F1C 100%);
         }
 
+        /* ── BANNER TOP ── */
+        .banner-top {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            overflow: hidden;
+        }
+        .banner-top img {
+            width: 100%;
+            display: block;
+            max-height: 420px;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .banner-top::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent, var(--dark));
+        }
+
         /* ── LAYOUT ── */
         .page {
             position: relative;
             z-index: 1;
-            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            padding: 4rem 2rem;
+            padding: 3rem 2rem 5rem;
             text-align: center;
-        }
-
-        /* ── LOGO ── */
-        .logo {
-            width: 160px;
-            height: 160px;
-            object-fit: contain;
-            margin-bottom: 2.5rem;
-            filter: drop-shadow(0 8px 32px rgba(44,120,115,0.45));
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50%       { transform: translateY(-12px); }
         }
 
         /* ── BADGE ── */
@@ -170,33 +175,6 @@
             background: rgba(44,120,115,0.2);
             border-color: rgba(44,120,115,0.4);
             color: var(--white);
-        }
-
-        /* ── BANNER PREVIEW ── */
-        .banner-preview {
-            max-width: 680px;
-            width: 100%;
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-        .preview-label {
-            font-size: 0.65rem;
-            font-weight: 600;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: rgba(255,255,255,0.2);
-            margin-bottom: 1rem;
-        }
-        .banner-img {
-            width: 100%;
-            border-radius: 16px;
-            border: 1px solid rgba(255,255,255,0.08);
-            box-shadow: 0 24px 64px rgba(0,0,0,0.5);
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-        }
-        .banner-img:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 32px 80px rgba(0,0,0,0.6);
         }
 
         /* ── CTA ── */
@@ -330,7 +308,7 @@
 
         /* ── RESPONSIVE ── */
         @media (max-width: 480px) {
-            .logo { width: 120px; height: 120px; }
+            .banner-top img { max-height: 220px; }
             .cta-group { flex-direction: column; align-items: center; }
             .btn { width: 100%; max-width: 300px; justify-content: center; }
         }
@@ -340,33 +318,30 @@
 <body>
     <div class="bg"></div>
 
+    <div class="banner-top">
+        <img src="images/banner.png" alt="Whole Health Consulting" />
+    </div>
+
     <main class="page">
 
-        <img src="images/logo.png" alt="Whole Health Consulting" class="logo fade-in d1" />
+        <div class="badge fade-in d1">Launching Soon</div>
 
-        <div class="badge fade-in d2">Launching Soon</div>
-
-        <h1 class="fade-in d2">
+        <h1 class="fade-in d1">
             Real Food.<br />
             <em>Clean Living.</em><br />
             American Made.
         </h1>
 
-        <p class="tagline fade-in d3">Whole Health Consulting</p>
+        <p class="tagline fade-in d2">Whole Health Consulting</p>
 
-        <p class="description fade-in d3">
+        <p class="description fade-in d2">
             We're putting the finishing touches on something built for families who are
             <strong>done being lied to</strong> about what goes in their body, on their body,
             and in their home. No GMOs. No chemicals. No pharmaceutical agenda.
             <strong>Just the truth.</strong>
         </p>
 
-        <div class="banner-preview fade-in d4">
-            <p class="preview-label">Full site launching soon</p>
-            <img src="images/banner.png" alt="Whole Health Consulting" class="banner-img" />
-        </div>
-
-        <div class="pillars fade-in d5">
+        <div class="pillars fade-in d3">
             <span class="pillar-tag">Peptides &amp; Longevity</span>
             <span class="pillar-tag">Clean Supplementation</span>
             <span class="pillar-tag">Clean Beauty</span>
@@ -374,7 +349,7 @@
             <span class="pillar-tag">Biohacking &amp; Wellness</span>
         </div>
 
-        <div class="cta-group fade-in d6">
+        <div class="cta-group fade-in d4">
             <a href="https://substack.com/@wholehealthconsulting" target="_blank" class="btn btn-primary">
                 Subscribe Free — Be First In
             </a>
@@ -383,12 +358,12 @@
             </a>
         </div>
 
-        <p class="cta-note fade-in d5">Free weekly newsletter. No spam. Unsubscribe anytime.</p>
+        <p class="cta-note fade-in d4">Free weekly newsletter. No spam. Unsubscribe anytime.</p>
 
-        <div class="divider fade-in d6"></div>
+        <div class="divider fade-in d5"></div>
 
-        <p class="social-label fade-in d6">Find us everywhere</p>
-        <div class="social-row fade-in d6">
+        <p class="social-label fade-in d5">Find us everywhere</p>
+        <div class="social-row fade-in d5">
             <a href="https://substack.com/@wholehealthconsulting" target="_blank" class="social-btn">
                 ✉ Substack
             </a>
@@ -403,7 +378,7 @@
             </a>
         </div>
 
-        <p class="foot fade-in d7">
+        <p class="foot fade-in d6">
             &copy; 2026 Whole Health Consulting &nbsp;·&nbsp;
             This site contains affiliate links. Content is for educational purposes only
             and does not constitute medical advice.
