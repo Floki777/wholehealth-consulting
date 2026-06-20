@@ -64,37 +64,29 @@
                 linear-gradient(150deg, #0D1F1C 0%, #162B27 50%, #0D1F1C 100%);
         }
 
-        /* ── BANNER TOP ── */
-        .banner-top {
-            position: relative;
-            z-index: 1;
-            width: 100%;
-            overflow: hidden;
-        }
-        .banner-top img {
-            width: 100%;
-            display: block;
-            max-height: 420px;
-            object-fit: cover;
-            object-position: center top;
-        }
-        .banner-top::after {
-            content: '';
-            position: absolute;
-            bottom: 0; left: 0; right: 0;
-            height: 100px;
-            background: linear-gradient(to bottom, transparent, var(--dark));
-        }
-
         /* ── LAYOUT ── */
         .page {
             position: relative;
             z-index: 1;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 3rem 2rem 5rem;
+            justify-content: center;
+            padding: 4rem 2rem;
             text-align: center;
+        }
+
+        /* ── BANNER ── */
+        .banner-top {
+            max-width: 680px;
+            width: 100%;
+            margin-bottom: 2.5rem;
+        }
+        .banner-top img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 16px 48px rgba(0,0,0,0.4);
         }
 
         /* ── BADGE ── */
@@ -308,7 +300,6 @@
 
         /* ── RESPONSIVE ── */
         @media (max-width: 480px) {
-            .banner-top img { max-height: 220px; }
             .cta-group { flex-direction: column; align-items: center; }
             .btn { width: 100%; max-width: 300px; justify-content: center; }
         }
@@ -318,11 +309,11 @@
 <body>
     <div class="bg"></div>
 
-    <div class="banner-top">
-        <img src="images/banner.png" alt="Whole Health Consulting" />
-    </div>
-
     <main class="page">
+
+        <div class="banner-top fade-in d1">
+            <img src="images/banner.png" alt="Whole Health Consulting" />
+        </div>
 
         <div class="badge fade-in d1">Launching Soon</div>
 
