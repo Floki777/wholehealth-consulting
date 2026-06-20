@@ -10,9 +10,12 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Whole Health Consulting — Coming Soon" />
     <meta property="og:description" content="Real food. Clean living. American made. We're launching soon — subscribe to be first in." />
-    <meta property="og:image" content="https://wholehealth.consulting/images/logo.png" />
-    <meta property="og:url" content="https://wholehealth.consulting" />
+    <meta property="og:image" content="https://whole-health-consulting.com/images/banner.png" />
+    <meta property="og:url" content="https://whole-health-consulting.com" />
     <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://whole-health-consulting.com/images/banner.png" />
+    <link rel="canonical" href="https://whole-health-consulting.com" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png" />
@@ -167,6 +170,33 @@
             background: rgba(44,120,115,0.2);
             border-color: rgba(44,120,115,0.4);
             color: var(--white);
+        }
+
+        /* ── BANNER PREVIEW ── */
+        .banner-preview {
+            max-width: 680px;
+            width: 100%;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        .preview-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.2);
+            margin-bottom: 1rem;
+        }
+        .banner-img {
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .banner-img:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 32px 80px rgba(0,0,0,0.6);
         }
 
         /* ── CTA ── */
@@ -331,7 +361,12 @@
             <strong>Just the truth.</strong>
         </p>
 
-        <div class="pillars fade-in d4">
+        <div class="banner-preview fade-in d4">
+            <p class="preview-label">Full site launching soon</p>
+            <img src="images/banner.png" alt="Whole Health Consulting" class="banner-img" />
+        </div>
+
+        <div class="pillars fade-in d5">
             <span class="pillar-tag">Peptides &amp; Longevity</span>
             <span class="pillar-tag">Clean Supplementation</span>
             <span class="pillar-tag">Clean Beauty</span>
@@ -339,7 +374,7 @@
             <span class="pillar-tag">Biohacking &amp; Wellness</span>
         </div>
 
-        <div class="cta-group fade-in d5">
+        <div class="cta-group fade-in d6">
             <a href="https://substack.com/@wholehealthconsulting" target="_blank" class="btn btn-primary">
                 Subscribe Free — Be First In
             </a>

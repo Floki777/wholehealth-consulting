@@ -2,21 +2,21 @@
 
 ## Project Overview
 Hand-coded HTML/CSS/JS wellness website for Whole Health Consulting.
-Built in VS Code. Hosted via GitHub Pages or Netlify.
-DNS currently managed through Wix — will point to deployed site.
+Built in VS Code. Hosted via GitHub Pages (github.com/Floki777/wholehealth-consulting).
+DNS managed through Namecheap Premium DNS.
 
 ## GitHub Repository
-https://github.com/floki777/wholehealth-consulting
+https://github.com/Floki777/wholehealth-consulting
 
 ## Domain
-wholehealth.consulting (purchased through Wix)
+whole-health-consulting.com (purchased through Namecheap, Premium DNS)
+DNS pointing to GitHub Pages. HTTPS enforced via Let's Encrypt (GitHub managed).
 
-## Logo
-File: `images/logo.png`
-New simplified logo — clean dark green and gold minimal design.
-Features: cross, meditating woman, Bible, 5 wellness pillars (Supplements,
-Clean Food, Exercise, Beauty, Faith). Dark forest green (#21441F) with
-gold (#C8A951) accents. White background.
+## Images
+- `images/logo.png` — transparent background logo, dark green/gold, cross + meditating
+  woman + Bible + 5 wellness pillars (Supplements, Clean Food, Exercise, Beauty, Faith)
+- `images/banner.png` — wide banner version with botanical leaf decorations,
+  cream/off-white background. Used as og:image and in About section.
 
 ## Brand Colors
 - PRIMARY:   #2C7873  (deep teal)
