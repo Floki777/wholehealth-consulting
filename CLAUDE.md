@@ -52,7 +52,7 @@ Tags: American Made · Supports Veterans · Non-GMO · Clean Beauty ·
 All links are placeholders — update with real URLs when available:
 - Substack:  https://substack.com/@wholehealthconsulting
 - Rumble:    https://rumble.com/c/wholehealthconsulting
-- Telegram:  https://t.me/wholehealthconsulting
+- TikTok:    https://www.tiktok.com/@wholehealthconsulting
 - Pinterest: https://pinterest.com/wholehealthconsulting
 
 ## Affiliate Disclosure (required on every page)
@@ -68,10 +68,10 @@ purposes only and does not constitute medical advice."
 3. MISSION — Bold mission statement. Clean off-white background.
              Brand tags row.
 4. PILLARS — 5 animated cards. One per pillar. Dark background.
-5. CONTENT — Latest from Substack + Rumble + Telegram cards.
+5. CONTENT — Latest from Substack + Rumble + TikTok cards.
 6. PRODUCTS — Clean affiliate product grid. "We use this" badges.
 7. ABOUT — Brand story. Who we are. Logo visual. Faith-centered.
-8. NEWSLETTER — Dark section. Substack embed CTA. Telegram CTA.
+8. NEWSLETTER — Dark section. Substack embed CTA. TikTok CTA.
 9. FOOTER — Logo, nav links, social links, legal links, disclaimer.
 
 ## Current File Structure
