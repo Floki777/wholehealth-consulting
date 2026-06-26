@@ -50,7 +50,7 @@ Tags: American Made · Supports Veterans · Non-GMO · Clean Beauty ·
 
 ## Social & Community Links
 All links are placeholders — update with real URLs when available:
-- Substack:  https://substack.com/@wholehealthconsulting
+- Substack:  https://substack.com/@wholehealthconsulting1
 - Rumble:    https://rumble.com/c/wholehealthconsulting
 - TikTok:    https://www.tiktok.com/@wholehealthconsulting
 - Pinterest: https://pinterest.com/wholehealthconsulting
